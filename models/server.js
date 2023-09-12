@@ -20,7 +20,7 @@ class server{
     routes()
     {
         this.app.use(this.productoPath, require('../routes/producto'))
-        this.app.use(this.facturaoPath, require('../routes/factura'))
+        this.app.use(this.facturaPath, require('../routes/factura'))
     }
     async dbConectar(){
         await dbConnection()

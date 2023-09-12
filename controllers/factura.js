@@ -2,7 +2,7 @@ const { response } = require('express');
 const Factura = require('../models/factura'); // Cambiar el nombre del modelo si es diferente
 
 const getFactura = async (req, res = response) => {
-    let mensaje = '';
+    let mensaje = ''
     try {
         const facturas = await Factura.find()
         mensaje = facturas.mensaje
